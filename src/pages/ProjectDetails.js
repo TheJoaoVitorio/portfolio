@@ -135,6 +135,10 @@ export default function ProjectDetails() {
                     likes: response.data.likes || 0,
                     views: response.data.views || 0
                 });
+
+                // Incrementar a contagem de visualizações
+                await api.post(`/projetos/${project.id}/view`)
+        
             } catch (error) {
                 console.error('Erro ao carregar dados:', error);
             }
@@ -190,7 +194,7 @@ export default function ProjectDetails() {
                             <IoHeart className={`${styles.iconLike} ${liked ? styles.liked : ''}`} /> {stats.likes}
                         </div>
                         <div className={styles.sectionDetailsApresentationViews}>
-                            <FaEye /> {stats.likes}
+                            <FaEye /> {stats.views}
                         </div>
                     </div>
                 </div>
