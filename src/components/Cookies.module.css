@@ -1,0 +1,64 @@
+.CookiesContainer{
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding-bottom: 20px;
+}
+
+.CookiesContent{
+    width: 350px;
+    height: 100px;
+    background: rgba(15, 16, 16, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: rgb(22, 22, 22) 0px 6px 24px 0px, rgba(28, 28, 28, 0.892) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 20px;       
+}
+
+.CookiesSectionRight{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding: 8px;
+    gap: 8px;
+}
+
+.CookiesText h1{
+    font-size: 10px;
+    text-align:justify;
+}
+
+.CookiesButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CookiesButton{
+    cursor: pointer; 
+    width: 100px;
+    height: 30px;
+    color: aliceblue;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    background: rgba(15, 16, 16, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: rgb(22, 22, 22) 0px 6px 24px 0px, rgba(28, 28, 28, 0.892) 0px 0px 0px 1px; 
+}
+
+.CookiesButton:hover{
+    transform: scale(1.0);
+}

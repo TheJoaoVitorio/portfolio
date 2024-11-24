@@ -1,0 +1,231 @@
+.ProjectDetailsContainer{
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    width: 70%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ProjectDetailsContainer h1{
+    color: whitesmoke;
+}
+
+.ProjectDetailsContainer p{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.ProjectDetailsImageApresentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectDetailsImageApresentation img{
+    width: 90%;
+    height: 540px;
+    background: rgba(15, 16, 16, 0.8); /* Fundo com cor semi-transparente */
+    backdrop-filter: blur(10px);
+    box-shadow: rgb(22, 22, 22) 0px 6px 24px 0px, rgba(28, 28, 28, 0.892) 0px 0px 0px 1px;
+    border-radius: 60px;
+    padding: 16px;
+    opacity: 0.7;
+}
+
+.sectionDetailsApresentation{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.sectionDetailsApresentationContent{
+    background: rgba(15, 16, 16, 0.8); /* Fundo com cor semi-transparente */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    box-shadow: rgb(22, 22, 22) 0px 6px 24px 0px, rgba(28, 28, 28, 0.892) 0px 0px 0px 1px;
+    display: flex;
+    padding: 12px;
+    border-radius: 50px;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 300px; */
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.3);
+}
+.sectionDetailsApresentationReactions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.sectionDetailsApresentationLikes,.sectionDetailsApresentationViews{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.sectionDetailsApresentationLikes svg, .sectionDetailsApresentationViews svg{
+    font-size: 22px;
+}
+.badgesContainer {
+    display: flex;
+    gap: 8px; /* Espaçamento entre os badges */
+    flex-wrap: wrap; /* Permitir que os badges quebrem linha se necessário */
+    justify-content: center; /* Centralizar os badges */
+    align-items: center;
+}
+
+
+.badgeDetailsLanguages{
+    /* border: 2px solid red; */
+    font-size: 14px;
+}
+
+.iconStyle {
+    font-size: 14px; /* Tamanho do ícone */
+}
+
+.iconLike.liked {
+    color: #3b82f6;
+}
+
+.iconLike:hover{
+    color: #3b82f6;
+    cursor: pointer;
+}
+
+.badgeStyleDjango{
+    border-radius: 50px;
+    background-color: #316b58;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    color: #0f1715;
+    padding: 4px; 
+    display: flex;
+    align-items: center;
+}
+
+.styleJavascript {
+    border-radius: 50px;
+    background-color: #f0db4f;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    color: #323330;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.stylePython{
+    border-radius: 50px;
+    background-color: #2753e4;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    color: #212668;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.styleBootstrap{
+    border-radius: 50px;
+    background-color: #5007b1;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    color: #260c57;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.sectionAboutProjectContainer{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Três colunas iguais */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    justify-items: center;
+    gap: 12px;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.sectionAboutProjectContent{
+    /* border: 2px solid wheat; */
+    background: rgba(15, 16, 16, 0.8); 
+    backdrop-filter: blur(10px); 
+    box-shadow: rgb(22, 22, 22) 0px 6px 24px 0px, rgba(28, 28, 28, 0.892) 0px 0px 0px 1px;
+    border-radius: 40px;
+    width: 225px;
+    height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.9; */
+}
+
+.sectionAboutProjectImage img{
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    width: 200px;
+    /* height: 420px; */
+    /* position: absolute; */
+}
+
+.sectionAboutProjectTextContainer{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.sectionAboutProjectTextContent{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.mobileStyle{
+    width: 100%;
+    border: 2px solid red;
+}
+
+@media(max-width: 1329px){
+    .sectionAboutProjectContainer {
+        grid-template-columns: repeat(3, 1fr); /* Uma coluna para telas menores */
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .sectionAboutProjectContainer {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas para telas médias */
+    }
+}
+
+@media (max-width:834px){
+    .sectionAboutProjectContainer{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionAboutProjectContainer {
+        grid-template-columns: 1fr; /* Uma coluna para telas menores */
+    }
+
+    .badgeDetailsLanguages {
+        font-size: 0; /* Ocultar o texto */
+    }
+
+    .badgeDetailsLanguages .iconStyle {
+        font-size: 24px; /* Aumentar o tamanho do ícone para destacá-lo */
+    }
+}
+
+@media(max-width: 448px){
+    .stepperContainer{
+        width: 85%;
+    }
+}

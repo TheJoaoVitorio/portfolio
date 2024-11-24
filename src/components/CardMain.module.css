@@ -1,0 +1,13 @@
+.cardMain{
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 22vh;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:400px){
+    .cardMain{
+        width: 90%;
+    }
+}

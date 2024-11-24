@@ -1,0 +1,95 @@
+.FooterContainer{
+    width: 70%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.FooterContentText{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.FooterContentText span{
+    color: #3b82f6;
+}
+
+.FooterTextLeft{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 25px;
+    color: whitesmoke;
+    font-size: 10px;
+    background: rgba(15, 16, 16, 0.8); /* Fundo com cor semi-transparente */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    box-shadow: rgb(22, 22, 22) 0px 6px 24px 0px, rgba(28, 28, 28, 0.892) 0px 0px 0px 1px;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.FooterTextRight{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.FooterTextGitHub{
+    width: 30px;
+    height: 25px;
+    background: rgba(15, 16, 16, 0.8); /* Fundo com cor semi-transparente */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    box-shadow: rgb(22, 22, 22) 0px 6px 24px 0px, rgba(28, 28, 28, 0.892) 0px 0px 0px 1px;
+    display: flex;
+    padding: 8px;
+    border-radius: 50px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 5px;
+    color: #3b82f6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.BadgeReact{
+    width: 130px;
+    height: 25px;
+    background: rgba(15, 16, 16, 0.8); /* Fundo com cor semi-transparente */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    box-shadow: rgb(22, 22, 22) 0px 6px 24px 0px, rgba(28, 28, 28, 0.892) 0px 0px 0px 1px;
+    display: flex;
+    padding: 8px;
+    border-radius: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.BadgeReact{
+    font-size: 20px;
+    
+}
+
+.BadgeReactText{
+    font-size: 10px;
+    color: #3b82f6;
+}
+
+@media (max-width:778px){
+    .FooterTextLeft{
+        width: 190px;
+        font-size: 5px;
+    }
+    .FooterTextRight{
+        gap: 8px;
+        margin-left: 8px;
+    }
+    .BadgeReact{
+        width: 80px;
+    }
+    .BadgeReactText{
+        font-size: 5px;
+    }
+}

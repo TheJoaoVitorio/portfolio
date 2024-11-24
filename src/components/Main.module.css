@@ -1,0 +1,10 @@
+.main{
+    display: flex;
+    justify-content: center;
+    padding-top: 15vh;
+    margin: 0 auto;
+    width: 70%;
+    color: rgb(222, 222, 222);
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
