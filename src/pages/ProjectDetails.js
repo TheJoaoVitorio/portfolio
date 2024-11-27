@@ -21,6 +21,7 @@ import { BiLogoJavascript, BiLogoDjango,BiLogoPython } from 'react-icons/bi';
 import { SiBootstrap } from "react-icons/si";
 import axios from 'axios';
 import Stepper from '../components/Stepper';
+import Skeleton from '../components/Skeleton';
 import BtnBackToTop from '../components/BtnBackToTop';
 
 const projects = [
@@ -68,7 +69,7 @@ const projects = [
 export default function ProjectDetails() {
     const { id } = useParams();
     const project = projects.find((project) => project.id === parseInt(id));
-    
+    const [loading, setLoading] = useState(true);
     const api = axios.create({
         baseURL: 'https://deploy-free-test.vercel.app/'
     });
@@ -129,7 +130,7 @@ export default function ProjectDetails() {
         // Carrega dados do projeto
         const loadProjectData = async () => {
             try {
-                console.log(api);
+                
                 const response = await api.get(`/projetos/${project.id}`);
                 setStats({
                     likes: response.data.likes || 0,
@@ -141,6 +142,8 @@ export default function ProjectDetails() {
         
             } catch (error) {
                 console.error('Erro ao carregar dados:', error);
+            } finally {
+                setLoading(false);
             }
         };
 
@@ -191,12 +194,22 @@ export default function ProjectDetails() {
                     </div>
                     <div className={styles.sectionDetailsApresentationReactions}>
                         <div className={`${styles.sectionDetailsApresentationLikes} ${liked ? styles.liked : ''}`} onClick={handleLike}>
-                            <IoHeart className={`${styles.iconLike} ${liked ? styles.liked : ''}`} /> {stats.likes}
+                            <IoHeart className={`${styles.iconLike} ${liked ? styles.liked : ''}`} />
+                            {loading ? (
+                            <Skeleton width={24} />
+                            ) : (
+                            <span>{stats.likes}</span>
+                            )}
                         </div>
                         <div className={styles.sectionDetailsApresentationViews}>
-                            <FaEye /> {stats.views}
+                            <FaEye />
+                            {loading ? (
+                            <Skeleton width={24} />
+                            ) : (
+                            <span>{stats.views}</span>
+                            )}
                         </div>
-                    </div>
+                        </div>
                 </div>
             </div>
 
