@@ -9,9 +9,6 @@ import styles from '../components/Card.module.css';
 import gifDesktopWLNutrion from '../assets/gifProjects/Wlnutrion.gif';
 import gifMobileWLNutrion from '../assets/gifProjects/WLN-mobile2.gif';
 
-import gifDesktopCars from '../assets/gifProjects/cars.gif';
-import gifMobileCars from '../assets/gifProjects/carsMobile.gif';
-
 
 const projects = [
     {
@@ -19,13 +16,7 @@ const projects = [
         gifDesktop: gifDesktopWLNutrion,
         gifMobile: gifMobileWLNutrion,
         title: 'Wlnutrion'
-    },
-    {
-        id: 2,
-        gifDesktop: gifDesktopCars,
-        gifMobile: gifMobileCars,
-        title: 'Cars'
-    },
+    }
 ];
 
 export default function Card() {
