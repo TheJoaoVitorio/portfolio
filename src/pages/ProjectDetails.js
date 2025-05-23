@@ -138,7 +138,7 @@ export default function ProjectDetails() {
                 });
 
                 // Incrementar a contagem de visualizações
-                await api.post(`/projetos/${project.id}/view`)
+                await api.post(`/projetos/${project.id}`)
         
             } catch (error) {
                 console.error('Erro ao carregar dados:', error);
