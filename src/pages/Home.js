@@ -11,7 +11,7 @@ import Cookies from '../components/Cookies';
 import { SiDelphi, SiDbeaver, SiNotion } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { FaPhoenixSquadron, FaGitAlt,FaFigma  } from "react-icons/fa";
+import { FaPhoenixSquadron, FaGitAlt, FaFigma , FaDocker } from "react-icons/fa";
 
 export default function Home(){
 
@@ -33,13 +33,18 @@ export default function Home(){
         },
         {
           icon: <SiDelphi size={24} />,
-          name: "Delphi 11.3",
+          name: "Delphi 10.3",
           description: "IDE para desenvolvimento rápido de aplicativos nativos multiplataforma, especializada em Windows e com suporte estendido para mobile."
         },
         {
           icon: <VscVscode size={24} />,
           name: "VS Code",
           description: "Ambiente de desenvolvimento integrado."
+        },
+        {
+          icon: <FaDocker size={24} />,
+          name: "Docker",
+          description: "Containerização de aplicações para facilitar o desenvolvimento, teste e implantação em ambientes isolados."
         },
         {
           icon: <SiDbeaver size={24} />,
